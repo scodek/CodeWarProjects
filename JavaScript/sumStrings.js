@@ -4,6 +4,8 @@ For example: sumStrings('1','2') // => '3'
 sumStrings('50095301248058391139327916261', '81055900096023504197206408605') // => 131151201344081895336534324866
 
 Note : A string representation of an integer will contain no characters besides the ten numerals "0" to "9".
+
+This is a 4 kyu problem.
 */
 
 function sumStrings(a,b) { 
