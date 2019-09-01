@@ -6,7 +6,7 @@ Example: createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) // => returns "(123) 
 
 */
 
-//Solution:
+//Solution: using 'forEach' function
 
 function createPhoneNumber(numbers){
   
@@ -22,5 +22,23 @@ function createPhoneNumber(numbers){
 	});
 
 	return finalStr;
+
+}
+
+//Solution : using 'reduce' function
+function createPhoneNumber(numbers){
+    let count = 0;
+	return numbers.reduce((acc,curVal) =>{
+      acc += curVal;
+      count++;
+      if(count === 3){
+      	acc += ') ';
+      }else if(count === 6){
+      	acc += '-';
+      }
+
+      return acc;
+
+	},'(');
 
 }
