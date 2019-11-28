@@ -1,0 +1,15 @@
+/*
+In this exercise, a string is passed to a method and a new string has to be returned with the first character of each word in the string.
+For example:
+"This Is A Test" ==> "TIAT"
+
+Developer's note:
+learning:
+1. different types of accumulator passing to reduce method
+2. String function charAt
+
+*/
+
+function makeString(s){
+  return s.split(' ').reduce((finalStr,subStr) =>(finalStr += subStr.charAt(0)),'');
+}
